@@ -1,0 +1,11 @@
+/* 
+  InfoPlist.strings
+  IF-BasetisAPP
+
+  Created by Fatima Syed on 05/10/2021.
+  Copyright © 2021 Basetis. All rights reserved.
+*/
+NSLocationWhenInUseUsageDescription = "We need your ubication to show you cinemas that are close to you :D";
+NSCameraUsageDescription = "Cinetis requires access to the camera to set your profile photo";
+NSPhotoLibraryUsageDescription = "Cinetis requires access to the photo library and lets you choose a profile photo";
+NSPhotoLibraryAddUsageDescription = "Cinetis will have access to the photos you select";

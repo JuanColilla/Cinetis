@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Favorite Movies-->
+        <scene sceneID="bKf-uQ-YMx">
+            <objects>
+                <collectionViewController storyboardIdentifier="favoriteMoviesView" title="Favorite Movies" id="EPm-lI-usj" customClass="FavoriteMoviesViewController" customModule="IF_BasetisAPP" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="fYV-ff-aPP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="3Yj-ZY-c4p">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FavoriteMovie" id="chy-Vu-tKd" customClass="FavoriteMoviesViewCell" customModule="IF_BasetisAPP" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="170" height="255"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="0et-eW-euk">
+                                    <rect key="frame" x="0.0" y="0.0" width="170" height="255"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VH8-Lx-axO">
+                                            <rect key="frame" x="0.0" y="0.0" width="170" height="255"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="255" id="lmK-ct-UrP"/>
+                                                <constraint firstAttribute="width" constant="170" id="yxx-7Y-2jE"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="VH8-Lx-axO" secondAttribute="trailing" id="Ovl-nd-Yp0"/>
+                                        <constraint firstItem="VH8-Lx-axO" firstAttribute="centerX" secondItem="0et-eW-euk" secondAttribute="centerX" id="jOu-IC-Inh"/>
+                                        <constraint firstItem="VH8-Lx-axO" firstAttribute="leading" secondItem="0et-eW-euk" secondAttribute="leading" id="jTi-MW-5pN"/>
+                                        <constraint firstAttribute="bottom" secondItem="VH8-Lx-axO" secondAttribute="bottom" id="knK-4K-hbR"/>
+                                        <constraint firstItem="VH8-Lx-axO" firstAttribute="centerY" secondItem="0et-eW-euk" secondAttribute="centerY" id="q3e-xz-IJS"/>
+                                        <constraint firstItem="VH8-Lx-axO" firstAttribute="top" secondItem="0et-eW-euk" secondAttribute="top" id="sg1-Fd-4Aa"/>
+                                    </constraints>
+                                </collectionViewCellContentView>
+                                <size key="customSize" width="170" height="255"/>
+                                <connections>
+                                    <outlet property="favoriteMovieImageView" destination="VH8-Lx-axO" id="eqB-Oq-J5b"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="EPm-lI-usj" id="xuj-4K-lic"/>
+                            <outlet property="delegate" destination="EPm-lI-usj" id="xpe-qN-S47"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VPd-JH-qUV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-117" y="-32"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

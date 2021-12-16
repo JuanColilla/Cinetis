@@ -1,0 +1,9 @@
+
+/* Class = "UITabBarItem"; title = "Peliculas"; ObjectID = "4x8-Ay-Xic"; */
+"4x8-Ay-Xic.title" = "Movies";
+
+/* Class = "UITabBarItem"; title = "Ajustes"; ObjectID = "Qd6-5h-6zG"; */
+"Qd6-5h-6zG.title" = "Settings";
+
+/* Class = "UITabBarItem"; title = "Cines"; ObjectID = "cAk-ue-pYz"; */
+"cAk-ue-pYz.title" = "Cinemas";

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bE2-AH-7pu">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Ajustes-->
+        <scene sceneID="JHj-xr-n9W">
+            <objects>
+                <tableViewController storyboardIdentifier="settingsView" id="bE2-AH-7pu" customClass="SettingsViewController" customModule="IF_BasetisAPP" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="u8p-2v-hrx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellRow" id="r2A-Sr-9Q8" customClass="SettingsViewCell" customModule="IF_BasetisAPP" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="24.333333969116211" width="375" height="45.333332061767578"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="r2A-Sr-9Q8" id="v7F-1K-Vci">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="45.333332061767578"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ir a la web de Basetis" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w51-yq-5go" userLabel="label">
+                                            <rect key="frame" x="16" y="11.000000000000002" width="169" height="21.666666666666671"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow.up.right.square.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="fCb-1k-gyo">
+                                            <rect key="frame" x="340" y="11.666666666666664" width="25" height="22.333333333333336"/>
+                                            <color key="tintColor" systemColor="labelColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="25" id="O3g-8Z-6tf"/>
+                                                <constraint firstAttribute="height" constant="25" id="YsV-Jr-7RS"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="w51-yq-5go" firstAttribute="leading" secondItem="v7F-1K-Vci" secondAttribute="leadingMargin" id="6LX-ax-Qkl"/>
+                                        <constraint firstItem="fCb-1k-gyo" firstAttribute="top" secondItem="v7F-1K-Vci" secondAttribute="top" constant="10" id="LQI-VP-vZc"/>
+                                        <constraint firstAttribute="bottom" secondItem="fCb-1k-gyo" secondAttribute="bottom" constant="10" id="PXe-Au-ewu"/>
+                                        <constraint firstItem="w51-yq-5go" firstAttribute="top" secondItem="v7F-1K-Vci" secondAttribute="topMargin" id="QNX-RA-CCg"/>
+                                        <constraint firstAttribute="trailing" secondItem="fCb-1k-gyo" secondAttribute="trailing" constant="10" id="rna-xB-rjv"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="label" destination="w51-yq-5go" id="nmg-f1-vVP"/>
+                                    <outlet property="linkBasetisImage" destination="fCb-1k-gyo" id="ZS7-eU-FY2"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="bE2-AH-7pu" id="OsB-b4-maT"/>
+                            <outlet property="delegate" destination="bE2-AH-7pu" id="3jF-QG-W2l"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Ajustes" largeTitleDisplayMode="always" id="YhC-ns-MYz"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vYM-e6-vtp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2628.985507246377" y="90.401785714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow.up.right.square.fill" catalog="system" width="128" height="114"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

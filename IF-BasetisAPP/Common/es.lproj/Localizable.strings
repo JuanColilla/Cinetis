@@ -1,0 +1,41 @@
+/*
+  Localizable.strings
+  IF-BasetisAPP
+
+  Created by Fatima Syed on 04/10/2021.
+  Copyright © 2021 Basetis. All rights reserved.
+*/
+
+"locationNotAvailableAlert" = "Ubicación no disponible";
+"permissionNotGivenMessage" = "No se ha concedido permiso para acceder a la ubicación, vaya a ajustes para cambiar el permiso.";
+"settingsTitle" = "Ajustes";
+"okAlert" = "OK";
+"errorMessage" = "Error";
+"cinemasTitle" = "Cinemas";
+"goTobasetisWeb" = "Ir a la web de Basetis";
+"sendComments" = "Enviar comentarios";
+"alertProfileTitle" = "Vas a borrar todos los campos";
+"alertProfileMessage" = "Estás seguro de que quieres borrar todos los textos?";
+"profileOkAlert" = "OK";
+"alertProfileActionCancel" = "Cancelar";
+"deleteDataOption" = "Eliminar datos";
+"buttonCancelText" = "Cancelar";
+"alertProfileTitleSave" = "Datos guardados";
+"alertProfileMessageSave" = "Tus datos han sido guardados";
+"alertGoBackButtonTitle" = "Estás seguro?";
+"alertGoBackButtonMessage" = "Si continuas perderás todos tus datos no guardados.";
+"settingsTitle" = "〈 Ajustes";
+
+// MARK: OnBoarding
+"titleOnBoarding" = "Bienvenid@";
+"locationTitleOnBoarding" = "Ubicación";
+"locationBodyTextOnBoarding" = "Podremos ubicarte en el mapa y mostrarte cines cercanos.";
+"cameraTitleOnBoarding" = "Cámara";
+"cameraBodyTextOnBoarding" = "Podrás tomarte una foto para establecerla en el perfil.";
+"photoLibraryTitleOnBoarding" = "Fototeca";
+"photoLibraryBodyTextOnBoarding" = "Podrás escoger una foto de perfil desde tu fototeca.";
+"continueButtonTextOnBoarding" = "Continuar";
+"requestPermissionButtonTextOnBoarding" = "Solicitar permisos";
+
+// MARK: SearchBar
+"searchBarHint" = "Buscar películas, actores o directores";

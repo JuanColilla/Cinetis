@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3z0-Sd-dgB">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Películas-->
+        <scene sceneID="70s-aj-mdM">
+            <objects>
+                <collectionViewController storyboardIdentifier="MoviesVC" id="3z0-Sd-dgB" customClass="MoviesViewController" customModule="IF_BasetisAPP" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="nic-er-Wem">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ib8-xt-qtE">
+                            <size key="itemSize" width="170" height="255"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Movie" id="ZOm-Mk-T6N" customClass="MovieViewCell" customModule="IF_BasetisAPP" customModuleProvider="target">
+                                <rect key="frame" x="10" y="10" width="170" height="255"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="3or-83-wRh">
+                                    <rect key="frame" x="0.0" y="0.0" width="170" height="255"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="CXt-8c-Jyr">
+                                            <rect key="frame" x="0.0" y="0.0" width="170" height="255"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="CXt-8c-Jyr" secondAttribute="height" multiplier="37:56" id="JKx-sb-YgN"/>
+                                                <constraint firstAttribute="height" constant="255" id="nV5-yA-uEY"/>
+                                                <constraint firstAttribute="width" constant="170" id="rV8-05-AM2"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="CXt-8c-Jyr" firstAttribute="centerX" secondItem="3or-83-wRh" secondAttribute="centerX" id="FOU-JY-VX9"/>
+                                        <constraint firstItem="CXt-8c-Jyr" firstAttribute="leading" secondItem="3or-83-wRh" secondAttribute="leading" id="YES-Qj-EFd"/>
+                                        <constraint firstAttribute="trailing" secondItem="CXt-8c-Jyr" secondAttribute="trailing" id="ZbF-fJ-B4T"/>
+                                        <constraint firstItem="CXt-8c-Jyr" firstAttribute="centerY" secondItem="3or-83-wRh" secondAttribute="centerY" id="c89-Zp-3cD"/>
+                                        <constraint firstItem="CXt-8c-Jyr" firstAttribute="top" secondItem="3or-83-wRh" secondAttribute="top" id="nQK-N1-kdg"/>
+                                        <constraint firstAttribute="bottom" secondItem="CXt-8c-Jyr" secondAttribute="bottom" id="sAW-51-TsA"/>
+                                    </constraints>
+                                </collectionViewCellContentView>
+                                <size key="customSize" width="170" height="255"/>
+                                <connections>
+                                    <outlet property="movieImageView" destination="CXt-8c-Jyr" id="HOA-Qo-Bbf"/>
+                                    <segue destination="zJB-Re-gVI" kind="show" id="uHa-cN-VhE"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="3z0-Sd-dgB" id="X1A-z7-jzu"/>
+                            <outlet property="delegate" destination="3z0-Sd-dgB" id="t0h-uP-KIF"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="Películas" id="NeM-4i-XNG">
+                        <barButtonItem key="rightBarButtonItem" title="FavoriteMovies" image="star.fill" catalog="system" id="pgb-LH-k5t">
+                            <inset key="imageInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                            <inset key="landscapeImageInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                            <color key="tintColor" name="AccentColor"/>
+                            <connections>
+                                <segue destination="hXp-Sb-vgU" kind="show" id="RGv-YV-hZK"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="Ld6-wJ-mTK" kind="presentation" identifier="firstTimeOnBoarding" id="A5E-ch-Lo0"/>
+                    </connections>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kKi-Nw-8qv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="114.40000000000001" y="180.35982008995504"/>
+        </scene>
+        <!--OnBoarding-->
+        <scene sceneID="nEW-kL-vhE">
+            <objects>
+                <viewControllerPlaceholder storyboardName="OnBoarding" id="Ld6-wJ-mTK" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k3O-sn-OKf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="113" y="619"/>
+        </scene>
+        <!--favoriteMoviesView-->
+        <scene sceneID="0wM-wA-0gM">
+            <objects>
+                <viewControllerPlaceholder storyboardName="FavoriteMovies" referencedIdentifier="favoriteMoviesView" id="hXp-Sb-vgU" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="tgA-KY-vxe"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bsL-bj-6e8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="957" y="110"/>
+        </scene>
+        <!--movieDetailsView-->
+        <scene sceneID="hRq-8R-tS6">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MovieDetails" referencedIdentifier="movieDetailsView" id="zJB-Re-gVI" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Q3A-nd-QoM"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oTU-RE-bvH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="957" y="246"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="avatar" width="2000" height="3000"/>
+        <image name="star.fill" catalog="system" width="128" height="116"/>
+        <namedColor name="AccentColor">
+            <color red="0.45800000429153442" green="0.0030000000260770321" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

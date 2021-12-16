@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oOy-JM-zOb">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Cines cerca-->
+        <scene sceneID="SDc-po-y9A">
+            <objects>
+                <viewController storyboardIdentifier="mapView" id="oOy-JM-zOb" customClass="MapViewController" customModule="IF_BasetisAPP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sIT-Ge-JT3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f97-nP-Rdd">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </mapView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="nOv-8D-b5p"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="f97-nP-Rdd" firstAttribute="leading" secondItem="nOv-8D-b5p" secondAttribute="leading" id="Am4-so-0fK"/>
+                            <constraint firstItem="nOv-8D-b5p" firstAttribute="bottom" secondItem="f97-nP-Rdd" secondAttribute="bottom" id="Rmf-BX-NXs"/>
+                            <constraint firstItem="nOv-8D-b5p" firstAttribute="trailing" secondItem="f97-nP-Rdd" secondAttribute="trailing" id="oNZ-ez-RQh"/>
+                            <constraint firstItem="f97-nP-Rdd" firstAttribute="top" secondItem="nOv-8D-b5p" secondAttribute="top" id="yDr-GU-gC0"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Cines cerca" id="GJH-ML-Z0l"/>
+                    <connections>
+                        <outlet property="mapView" destination="f97-nP-Rdd" id="IxU-nO-gmY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0F0-OT-0LK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="863.768115942029" y="-160.04464285714286"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

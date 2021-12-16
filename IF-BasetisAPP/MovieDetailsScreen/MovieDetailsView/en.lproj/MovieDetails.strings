@@ -1,0 +1,11 @@
+/* Class = "UILabel"; text = "Estrellas:"; ObjectID = "KZ0-1x-Cx5"; */
+"KZ0-1x-Cx5.text" = "Stars:";
+
+/* Class = "UILabel"; text = "Crítica cinéfilos:"; ObjectID = "hbg-jy-bYf"; */
+"hbg-jy-bYf.text" = "Film lovers criticism:";
+
+/* Class = "UILabel"; text = "Director:"; ObjectID = "kJe-VJ-JCb"; */
+"kJe-VJ-JCb.text" = "Director:";
+
+/* Class = "UILabel"; text = "Crítica popular:"; ObjectID = "wh9-hv-41v"; */
+"wh9-hv-41v.text" = "Personal criticism:";

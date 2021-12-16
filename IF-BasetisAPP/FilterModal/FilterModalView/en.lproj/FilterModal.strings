@@ -1,0 +1,9 @@
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "28G-Iv-1Vq"; */
+"28G-Iv-1Vq.normalTitle" = "Cancel";
+
+/* Class = "UILabel"; text = "Filter"; ObjectID = "BuE-n0-QHA"; */
+"BuE-n0-QHA.text" = "Filter";
+
+/* Class = "UIButton"; normalTitle = "Apply"; ObjectID = "XJ7-Vq-9QV"; */
+"XJ7-Vq-9QV.normalTitle" = "Apply";

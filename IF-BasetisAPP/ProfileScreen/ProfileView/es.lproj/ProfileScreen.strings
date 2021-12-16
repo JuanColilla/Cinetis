@@ -1,0 +1,24 @@
+
+/* Class = "UILabel"; text = "Sobre mi"; ObjectID = "4tQ-f9-FHg"; */
+"4tQ-f9-FHg.text" = "Sobre mi";
+
+/* Class = "UILabel"; text = "Nombre"; ObjectID = "Fkz-tk-wEv"; */
+"Fkz-tk-wEv.text" = "Nombre";
+
+/* Class = "UILabel"; text = "Mail"; ObjectID = "XCy-x2-qto"; */
+"XCy-x2-qto.text" = "Mail";
+
+/* Class = "UIButton"; normalTitle = " Cancelar "; ObjectID = "ZHx-hn-5yC"; */
+"ZHx-hn-5yC.normalTitle" = " Cancelar ";
+
+/* Class = "UINavigationItem"; title = "Profile"; ObjectID = "f08-Ya-9Vt"; */
+"f08-Ya-9Vt.title" = "Perfil";
+
+/* Class = "UILabel"; text = "Teléfono"; ObjectID = "rl2-64-lrV"; */
+"rl2-64-lrV.text" = "Teléfono";
+
+/* Class = "UILabel"; text = "Departamento"; ObjectID = "tIU-m8-jbA"; */
+"tIU-m8-jbA.text" = "Departamento";
+
+/* Class = "UIButton"; normalTitle = " Guardar "; ObjectID = "u6z-uW-UiY"; */
+"u6z-uW-UiY.normalTitle" = " Guardar ";
